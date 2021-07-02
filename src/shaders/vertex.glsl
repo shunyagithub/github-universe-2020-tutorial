@@ -7,7 +7,7 @@ void main() {
   float time = uTime * 1.0;
 
   vec3 transformed = position;
-  transformed.z += sin(position.y + time);
+  // transformed.z += sin(position.x + time);
 
   gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
 }
